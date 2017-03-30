@@ -1,0 +1,13 @@
+@import "./fonts.css";
+
+@define-mixin circular $size {
+	font-family: 'CircularStd', 'Arial', sans-serif;
+	font-size: $size;	
+	font-weight: 200;
+}
+
+@define-mixin courier $size {
+	font-family: 'Courier', serif;
+	font-size: $size;	
+	font-weight: 200;
+}

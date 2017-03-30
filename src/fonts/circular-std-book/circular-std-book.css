@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "CircularStd";
+  src: url('../../fonts/circular-std-book/CircularStd-Book.woff2') format('woff2'),
+       url('../../fonts/circular-std-book/CircularStd-Book.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}

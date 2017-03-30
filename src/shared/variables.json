@@ -1,0 +1,11 @@
+{
+  "breakpoints": {
+    "tablet": "(max-width: 1021px)",
+    "desktop": "(min-width: 1022px)",
+    "mobile": "(max-width: 750px)",
+    "desktop-wide": "(min-width: 1600px)",
+    "tablet-max": "(max-width: 900px)",
+    "mobile-max": "(max-width: 650px)"
+  }
+}
+

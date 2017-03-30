@@ -1,0 +1,36 @@
+@import "../../shared/variables.css";
+
+.app {
+  text-align: center;
+}
+
+.logo {
+  animation: logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.header {
+  background-color: var(--test);
+  height: 150px;
+  padding: 20px;
+  color: white;
+  @media (--tablet-mq) {
+    background-color: blue;
+  }
+}
+
+
+.intro {
+  font-size: large;
+}
+
+.parapgraph {
+  color: var(--black);
+  font-size: 4vw;
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+

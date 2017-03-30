@@ -1,0 +1,59 @@
+:root {
+  /* colors */
+  --red: #F0402A;
+  --orange: #FFEDE2;
+  --black: rgba(33, 33, 33, 1);
+  --white: rgba(255, 255, 255, 1);
+  --test: rgba(34, 123, 25, 1);
+
+  /* breakpoint */
+  --mobile-mq-max-width: 750px;
+  --tablet-mq-max-width: 900px;
+  --desktop-mq-max-width: 980px;
+
+  /* margin */
+  --margin-extra-small: 5px;
+  --margin-medium-small: 10px;
+  --margin-small: 15px;
+  --margin: 20px;
+  --margin-medium: 25px;
+  --margin-large: 30px;
+  --margin-xlarge: 40px;
+  --margin-xxlarge: 65px;
+
+  /* typeface */
+  --typeface-extra-small: 12px;
+  --typeface-small: 14px;
+  --typeface-regular: 16px;
+  --typeface-smedium: 20px;
+  --typeface-medium: 24px;
+  --typeface-medium-large: 26px;
+  --typeface-large: 30px;
+  --typeface-extra-large: 40px;
+
+  /* lineheight */
+  --line-height-extra-small: 14px;
+  --line-height-small: 16px;
+  --line-height-regular: 20px;
+  --line-height-smedium: 24px;
+  --line-height-medium: 30px;
+  --line-height-large: 40px;
+  --line-height-extra-large: 50px;
+
+  /* font weight */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+
+  /* widths */
+  --large-text-width: 95%;
+}
+
+
+@custom-media --tablet-mq map(variables, breakpoints, tablet);
+@custom-media --desktop-mq map(variables, breakpoints, desktop);
+@custom-media --mobile-mq map(variables, breakpoints, mobile);
+@custom-media --desktop-wide-mq map(variables, breakpoints, desktop-wide);
+@custom-media --tablet-maxq map(variables, breakpoints, tablet-max);
+@custom-media --mobile-maxq map(variables, breakpoints, mobile-max);
+
