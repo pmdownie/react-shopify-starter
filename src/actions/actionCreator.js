@@ -1,6 +1,8 @@
 import { 
 	fetchAllProducts,
-	fetchCart } from '../shopifyApi/config';
+	fetchCart } from '../shopifyApi/fetching';
+
+
 
 // cart actions
 
@@ -24,11 +26,10 @@ function loadCartError(error) {
   }
 }
 
-export function addItemToCart(variantObject, quantity) {
+export function addItemToCart(cartItem) {
   return {
     type: 'ADD_ITEM_TO_CART',
-    variantObject,
-    quantity
+    cartItem
   }
 }
 
@@ -40,6 +41,9 @@ export function removeItemToCart(lineItemId) {
 }
 
 
+
+// product actions actions
+
 function loadProducts() {
   return {
     type: 'PRODUCTS_LOAD',
@@ -47,7 +51,6 @@ function loadProducts() {
 }
 
 function loadProductsSuccess(products) {
-  console.log(products);
   return {
 		type: 'ADD_PRODUCTS',
 		products,
@@ -61,12 +64,10 @@ function loadProductsFail(error) {
   };
 }
 
-// export function addSunglassCollection(products) {
-// 	return {
-// 		type: 'ADD_SUNGLASS_COLLECTION',
-// 		products
-// 	}
-// }
+
+
+
+// thunks
 
 export function initializeCart() {
   return dispatch => {
@@ -96,16 +97,3 @@ export function getProducts() {
       });
   };
 }
-
-// export function getSunglassCollection() {
-//   return dispatch => {
-//     fetchSunglassCollection()
-//       .then(products => {
-//         console.log('actions.getSunglassCollection()', products);
-//         dispatch(addSunglassCollection(products));
-//       })
-//       .catch(error => {
-//         console.log('Sunglass Collection Error', error);
-//       });
-//   };
-// }
